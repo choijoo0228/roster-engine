@@ -1,6 +1,10 @@
 plugins {
     id 'java-library'
+    id 'maven-publish'
 }
+
+group = 'com.github.choijoo0228'
+version = '1.0.0'
 
 java {
     toolchain {
@@ -8,9 +12,10 @@ java {
     }
 }
 
-repositories {
-    mavenCentral()
-}
-
-dependencies {
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.java
+        }
+    }
 }
