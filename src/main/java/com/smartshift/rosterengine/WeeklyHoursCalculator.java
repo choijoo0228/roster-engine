@@ -1,4 +1,4 @@
-package com.smartshift.rosterenigne;
+package com.smartshift.rosterengine;
 
 import java.time.Duration;
 import java.time.LocalTime;
